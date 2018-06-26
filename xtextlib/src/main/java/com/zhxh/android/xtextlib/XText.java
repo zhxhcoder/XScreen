@@ -3,6 +3,7 @@ package com.zhxh.android.xtextlib;
 import android.graphics.Paint;
 import android.text.SpannableString;
 import android.text.Spanned;
+import android.text.style.AbsoluteSizeSpan;
 import android.text.style.ForegroundColorSpan;
 
 import java.util.ArrayList;
@@ -24,9 +25,9 @@ public class XText {
         return (int) paint.measureText(str);
     }
 
-    public static SpannableString getSpanColor(String sourceStr, String regStr, int color) {
+    public static SpannableString getSpanColorReg(String sourceStr, String regularExpression, int color) {
         SpannableString sp = new SpannableString(sourceStr);
-        Pattern p = Pattern.compile(regStr);
+        Pattern p = Pattern.compile(regularExpression);
         Matcher m = p.matcher(sp);
         while (m.find()) {
             int start = m.start();
@@ -36,6 +37,16 @@ public class XText {
                     Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
         }
         return sp;
+    }
+    public static SpannableString getSpanSizeReg(String srcStr, String regularExpression, int size) {
+        SpannableString resultSpan = new SpannableString(srcStr);
+        Pattern p = Pattern.compile(regularExpression);
+        Matcher m = p.matcher(srcStr);
+
+        while (m.find() && !regularExpression.equals("")) {
+            resultSpan.setSpan(new AbsoluteSizeSpan(size, true), m.start(), m.end(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        }
+        return resultSpan;
     }
 
     public static List<String> getRegexList(String input, String regex) {
