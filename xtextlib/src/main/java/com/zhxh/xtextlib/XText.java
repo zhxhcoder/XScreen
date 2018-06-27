@@ -1,4 +1,4 @@
-package com.zhxh.android.xtextlib;
+package com.zhxh.xtextlib;
 
 import android.content.Context;
 import android.graphics.Paint;

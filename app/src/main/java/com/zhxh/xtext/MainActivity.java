@@ -1,4 +1,4 @@
-package com.zhxh.android.xtext;
+package com.zhxh.xtext;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
