@@ -14,7 +14,7 @@ public class XString {
 
     private static final String floatRegex = "(-?\\d+)|(-?\\d+\\.\\d+)";
     private static final String emptyRegex = "\\s*";
-    private static final String colorRegex = "#([0-9a-fA-F]{6}|[0-9a-fA-F]{3})";
+    private static final String colorRegex = "#([0-9a-fA-F]{3}|[0-9a-fA-F]{6}|[0-9a-fA-F]{8})";
     private static final String hanziRegex = "[\\u4e00-\\u9fa5]";
     private static final String emailRegex = "\\w+([-+.]\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*";
     private static final String zeroRegex = "[\\s0\\.]+";
