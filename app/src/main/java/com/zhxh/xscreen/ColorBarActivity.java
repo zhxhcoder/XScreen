@@ -23,7 +23,7 @@ public class ColorBarActivity extends AppCompatActivity {
                 .statusColor(color(R.color.SpringGreen))  // 状态栏颜色
                 .statusDepth(50)                          // 状态栏颜色深度
                 .applyNav(true)                           // 是否应用到导航栏
-                .navColor(color(R.color.DoderBlue))       // 导航栏颜色
+                .navColor(color(R.color.DodgerBlue))       // 导航栏颜色
                 .navDepth(50)                             // 导航栏颜色深度
                 .build(this)
                 .apply();
