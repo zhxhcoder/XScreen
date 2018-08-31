@@ -10,11 +10,6 @@ import android.support.v7.widget.Toolbar;
 
 import com.zhxh.xscreenlib.XStatusBar;
 
-/**
- *
- * Created by Administrator on 2017/6/25.
- */
-
 public class DrawerActivity extends AppCompatActivity {
 
     @Override
@@ -32,8 +27,8 @@ public class DrawerActivity extends AppCompatActivity {
                 .build(this)
                 .apply();
 
-        DrawerLayout drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        DrawerLayout drawerLayout = findViewById(R.id.drawer_layout);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         toolbar.setBackgroundColor(ContextCompat.getColor(this, R.color.DeepSkyBlue));
         setSupportActionBar(toolbar);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, 0, 0);
