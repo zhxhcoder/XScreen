@@ -6,8 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.TextView;
 
-import com.zhxh.xscreenlib.XString;
-
 public class MainActivity extends AppCompatActivity {
 
     @Override
