@@ -6,9 +6,8 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/NoActionBar">
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,6 +15,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ColorBarActivity"
+            android:label="ColorBar" />
+        <activity android:name=".TransparentBarActivity1"
+            android:label="transparent"/>
+        <activity android:name=".HideBarActivity1"
+            android:label="hide"/>
+        <activity android:name=".ImmersionBarActivity"
+            android:label="immersion"/>
+        <activity android:name=".HideBarActivity2"
+            android:label="hide"/>
+        <activity android:name=".TransparentBarActivity2"
+            android:label="transparent"/>
+        <activity android:name=".DrawerActivity"
+            android:label="DrawerColorBar"/>
     </application>
 
 </manifest>

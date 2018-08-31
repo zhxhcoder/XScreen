@@ -1,57 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    tools:context="org.zackratos.ultimatesample.com.zhxh.xscreenlib.ultimatesample.MainActivity">
 
-    <TextView
-        android:id="@+id/tv1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="https://github.com/zhxhcoder/XScreen"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.15" />
+    <include
+        layout="@layout/toolbar"/>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/tv2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="https://github.com/zhxhcoder/XScreen"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.294" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/color_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Color_Bar"/>
+            <Button
+                android:id="@+id/immersion_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Immersion_Bar"/>
+            <Button
+                android:id="@+id/transparent_bar_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Transparent_Bar_1"/>
 
-    <TextView
-        android:id="@+id/tv3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="https://github.com/zhxhcoder/XScreen"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.443" />
+            <Button
+                android:id="@+id/transparent_bar_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Transparent_Bar_2"/>
 
-    <TextView
-        android:id="@+id/tv4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="https://github.com/zhxhcoder/XScreen"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.601" />
-</android.support.constraint.ConstraintLayout>
+            <Button
+                android:id="@+id/hide_bar_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hide_Bar_1"/>
+
+            <Button
+                android:id="@+id/hide_bar_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hide_Bar_2"/>
+
+            <Button
+                android:id="@+id/drawer_color_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="drawer_color_bar"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
