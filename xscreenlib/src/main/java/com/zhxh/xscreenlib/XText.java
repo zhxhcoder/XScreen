@@ -1,4 +1,4 @@
-package com.zhxh.xtextlib;
+package com.zhxh.xscreenlib;
 
 import android.graphics.Paint;
 import android.text.SpannableString;

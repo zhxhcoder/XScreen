@@ -1,4 +1,4 @@
-package com.zhxh.xtextlib;
+package com.zhxh.xscreenlib;
 
 /**
  * Created by zhxh on 2018/8/25

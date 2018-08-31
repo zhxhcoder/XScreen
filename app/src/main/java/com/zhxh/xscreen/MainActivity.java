@@ -1,4 +1,4 @@
-package com.zhxh.xtext;
+package com.zhxh.xscreen;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.TextView;
 
-import com.zhxh.xtextlib.XString;
+import com.zhxh.xscreenlib.XString;
 
 public class MainActivity extends AppCompatActivity {
 

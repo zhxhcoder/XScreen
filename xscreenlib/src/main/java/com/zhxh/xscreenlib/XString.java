@@ -1,4 +1,4 @@
-package com.zhxh.xtextlib;
+package com.zhxh.xscreenlib;
 
 import android.text.TextUtils;
 

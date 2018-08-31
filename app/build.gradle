@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 27
     defaultConfig {
-        applicationId "com.zhxh.xtext"
+        applicationId "com.zhxh.xscreen"
         minSdkVersion 16
         targetSdkVersion 27
         versionCode 1
@@ -33,7 +33,7 @@ dependencies {
     implementation 'com.android.support:appcompat-v7:27.1.1'
     implementation 'com.android.support.constraint:constraint-layout:1.1.2'
     implementation 'com.android.support:design:27.1.1'
-    implementation project(':xtextlib')
+    implementation project(':xscreenlib')
     //implementation(name: 'xtext', ext: 'aar')
     //implementation 'com.zhxh:xtextlib:1.6'
 
