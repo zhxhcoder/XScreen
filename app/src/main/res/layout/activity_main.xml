@@ -3,11 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="org.zackratos.ultimatesample.com.zhxh.xscreenlib.ultimatesample.MainActivity">
+    android:orientation="vertical">
 
-    <include
-        layout="@layout/toolbar"/>
+    <include layout="@layout/toolbar" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -16,47 +14,57 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="16dp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="16dp">
+
             <Button
                 android:id="@+id/color_bar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Color_Bar"/>
+                android:text="Color_Bar"
+                android:textAllCaps="false" />
+
             <Button
                 android:id="@+id/immersion_bar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Immersion_Bar"/>
+                android:text="Immersion_Bar"
+                android:textAllCaps="false" />
+
             <Button
                 android:id="@+id/transparent_bar_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Transparent_Bar_1"/>
+                android:text="Transparent_Bar_1"
+                android:textAllCaps="false" />
 
             <Button
                 android:id="@+id/transparent_bar_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Transparent_Bar_2"/>
+                android:text="Transparent_Bar_2"
+                android:textAllCaps="false" />
 
             <Button
                 android:id="@+id/hide_bar_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Hide_Bar_1"/>
+                android:text="Hide_Bar_1"
+                android:textAllCaps="false" />
 
             <Button
                 android:id="@+id/hide_bar_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Hide_Bar_2"/>
+                android:text="Hide_Bar_2"
+                android:textAllCaps="false" />
 
             <Button
                 android:id="@+id/drawer_color_bar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="drawer_color_bar"/>
+                android:text="drawer_color_bar"
+                android:textAllCaps="false" />
         </LinearLayout>
 
     </ScrollView>
