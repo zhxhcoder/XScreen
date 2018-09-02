@@ -18,18 +18,26 @@
         <activity
             android:name=".ColorBarActivity"
             android:label="ColorBar" />
-        <activity android:name=".TransparentBarActivity1"
-            android:label="transparent"/>
-        <activity android:name=".HideBarActivity1"
-            android:label="hide"/>
-        <activity android:name=".ImmersionBarActivity"
-            android:label="immersion"/>
-        <activity android:name=".HideBarActivity2"
-            android:label="hide"/>
-        <activity android:name=".TransparentBarActivity2"
-            android:label="transparent"/>
-        <activity android:name=".DrawerActivity"
-            android:label="DrawerColorBar"/>
+        <activity
+            android:name=".TransparentBarActivity1"
+            android:label="transparent" />
+        <activity
+            android:name=".HideBarActivity1"
+            android:label="hide" />
+        <activity
+            android:name=".ImmersionBarActivity"
+            android:label="immersion" />
+        <activity
+            android:name=".HideBarActivity2"
+            android:label="hide" />
+        <activity
+            android:name=".TransparentBarActivity2"
+            android:label="transparent" />
+        <activity
+            android:name=".DrawerActivity"
+            android:label="DrawerColorBar" />
+
+        <activity android:name=".XFringeBarActivity" />
     </application>
 
 </manifest>
