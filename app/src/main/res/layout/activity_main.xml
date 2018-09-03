@@ -65,6 +65,12 @@
                 android:layout_height="wrap_content"
                 android:text="drawer_color_bar"
                 android:textAllCaps="false" />
+            <Button
+                android:id="@+id/xfringe_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="xfringe_bar"
+                android:textAllCaps="false" />
         </LinearLayout>
 
     </ScrollView>

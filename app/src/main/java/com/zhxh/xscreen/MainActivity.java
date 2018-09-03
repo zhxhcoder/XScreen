@@ -15,7 +15,7 @@ import com.zhxh.xscreenlib.XStatusBar;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button colorBar, immersionBar, transparentBar1,
-            transparentBar2, hideBar1, hideBar2, drawerColorBar;
+            transparentBar2, hideBar1, hideBar2, drawerColorBar, xfringe_bar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,17 +34,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 .apply();
 
 
-        Toolbar tb = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar tb = findViewById(R.id.toolbar);
         tb.setBackgroundColor(ContextCompat.getColor(this, R.color.DeepSkyBlue));
         setSupportActionBar(tb);
 
-        colorBar = (Button) findViewById(R.id.color_bar);
-        immersionBar = (Button) findViewById(R.id.immersion_bar);
-        transparentBar1 = (Button) findViewById(R.id.transparent_bar_1);
-        transparentBar2 = (Button) findViewById(R.id.transparent_bar_2);
-        hideBar1 = (Button) findViewById(R.id.hide_bar_1);
-        hideBar2 = (Button) findViewById(R.id.hide_bar_2);
-        drawerColorBar = (Button) findViewById(R.id.drawer_color_bar);
+        colorBar = findViewById(R.id.color_bar);
+        immersionBar = findViewById(R.id.immersion_bar);
+        transparentBar1 = findViewById(R.id.transparent_bar_1);
+        transparentBar2 = findViewById(R.id.transparent_bar_2);
+        hideBar1 = findViewById(R.id.hide_bar_1);
+        hideBar2 = findViewById(R.id.hide_bar_2);
+        drawerColorBar = findViewById(R.id.drawer_color_bar);
+        xfringe_bar = findViewById(R.id.xfringe_bar);
 
         colorBar.setOnClickListener(this);
         immersionBar.setOnClickListener(this);
@@ -53,6 +54,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         hideBar1.setOnClickListener(this);
         hideBar2.setOnClickListener(this);
         drawerColorBar.setOnClickListener(this);
+        xfringe_bar.setOnClickListener(this);
     }
 
     @Override
@@ -84,6 +86,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             case R.id.drawer_color_bar:
                 startActivity(new Intent(this, DrawerActivity.class));
+                break;
+
+            case R.id.xfringe_bar:
+                startActivity(new Intent(this, XFringeBarActivity.class));
+                break;
             default:
 
                 break;
